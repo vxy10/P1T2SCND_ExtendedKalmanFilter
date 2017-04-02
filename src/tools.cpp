@@ -72,8 +72,8 @@ MatrixXd Tools::CalculateJacobian(const VectorXd& x_state) {
             -py/(pow(px,2) + pow(py,2)),
             px/(pow(px,2) + pow(py,2)),
             0, 0,
-            -pow(px,2)*vx/pow(pow(px,2)+pow(py,2),3/2)-px*py*vy/pow(pow(px,2)+pow(py,2),3/2)+vx/sqrt(pow(px,2)+pow(py,2)),
-            -px*py*vx/pow(pow(px,2)+pow(py,2),3/2)-pow(py,2)*vy/pow(pow(px,2)+pow(py,2),3/2)+vy/sqrt(pow(px,2)+pow(py,2)),
+            -pow(px,2)*vx/pow(pow(px,2)+pow(py,2),1.5)-px*py*vy/pow(pow(px,2)+pow(py,2),1.5)+vx/sqrt(pow(px,2)+pow(py,2)),
+            -px*py*vx/pow(pow(px,2)+pow(py,2),1.5)-pow(py,2)*vy/pow(pow(px,2)+pow(py,2),1.5)+vy/sqrt(pow(px,2)+pow(py,2)),
             px/pow(pow(px,2)+pow(py,2),.5),
             py/pow(pow(px,2)+pow(py,2),.5);
 
